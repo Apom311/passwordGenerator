@@ -2,20 +2,9 @@
 var generateBtn = document.querySelector("#generate");
 
 var lilLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-var toUpper = function (x) {
-  return x.toUpperCase();
-};
-bigLetters = lilLetters.map(toUpper);
-
+var bigLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
-
- 
-// var lilLetters = ["abcdefghijklmnopqrstuvwxyz"];
-// var bigLetters = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-// var numbers = ["0123456789"];
-// var symbols = ["!@#$%^&*,./;'<>?"];
 
 // Write password to the #password input
 function writePassword() {
@@ -23,7 +12,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
@@ -84,16 +72,4 @@ var generatePassword = function() {
     return;
 
   }
-
-
-
 }
-
-/*
-combineChar is the selected array based on user input
-password is ???
-passwordText id ???
-generatePassword is the main function line 27-70
-writePassword defines the functions and creates the actual seeable password as well as activating the generatePassword function
-undecided is a placeholder
-*/
