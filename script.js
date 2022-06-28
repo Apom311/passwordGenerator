@@ -13,7 +13,6 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
@@ -66,10 +65,8 @@ var generatePassword = function() {
     var password = blankSpace.join("");
     
     return password;
-
   } else {
     window.alert("Number does not match acceptable input.");
     return;
-
   }
 }
