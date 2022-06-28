@@ -64,7 +64,7 @@ var generatePassword = function() {
     }
     var password = blankSpace.join("");
     
-    return;
+    return password;
   } else {
     window.alert("Number does not match acceptable input.");
     return;
